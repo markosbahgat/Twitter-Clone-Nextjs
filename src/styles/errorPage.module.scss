@@ -1,0 +1,40 @@
+.main{
+    margin-left: 7.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100vh;
+  }
+
+  .Home_button{
+    background-color: rgb(29, 155, 240);
+    border: none;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    padding: 10px 25px;
+    a{
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+}
+  .Profile_button{
+    background-color: rgb(29, 155, 240);
+    border: none;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    padding: 10px 25px;
+    a{
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+}

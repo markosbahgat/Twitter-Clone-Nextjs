@@ -1,0 +1,110 @@
+@keyframes pop-in {
+    0% {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+}
+    100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+}
+}
+@keyframes pop-out {
+    0% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+}
+    100% {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+}
+}
+.speed_dial {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    z-index: 1000;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+.speed_dial i:hover{
+    display: inline-block;
+    text-decoration: none;
+}
+.speed_dial .toggle {
+    display: inline-block;
+    margin: 8px 0;
+}
+.speed_dial:hover .dials i {
+    animation: pop-in 0.3s ease both;
+}
+.speed_dial .dials {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    
+}
+.speed_dial .dials i {
+    margin: 8px 0;
+    animation: pop-out 0.3s ease both;
+    -webkit-animation: pop-out 0.3s ease both;
+    color: rgb(29, 155, 240);
+    background-color: rgb(19, 19, 19);
+    font-size: 17px;
+    padding: 12px;
+
+}
+.dials li , .toggle{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    
+}
+.speed_dial .dials i.pop-in {
+    animation: pop-in 0.3s ease both;
+}
+.speed_dial .dials li:nth-child(0) a {
+    animation-delay: 0s;
+}
+.speed_dial .dials li:nth-child(1) a {
+    animation-delay: 0.1s;
+}
+.speed_dial .dials li:nth-child(2) a {
+    animation-delay: 0.2s;
+}
+.speed_dial .dials li:nth-child(3) a {
+    animation-delay: 0.3s;
+}
+.speed_dial .dials li:nth-child(4) a {
+    animation-delay: 0.4s;
+}
+.speed_dial .dials li:nth-child(5) a {
+    animation-delay: 0.5s;
+}
+.speed_dial .dials li:nth-child(6) a {
+    animation-delay: 0.6s;
+}
+
+#shareBtn:hover{
+        color: rgb(29, 155, 240);
+        background-color: rgba(29, 156, 240, 0.116);
+}

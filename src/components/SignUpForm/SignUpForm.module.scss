@@ -1,0 +1,185 @@
+@import '../../styles/variables.scss';
+
+
+.LoginForm{
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+.login_block
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  -webkit-box-shadow:0px 0px 5px 0  #707070;
+  box-shadow:0px 0px 5px 1  #707070;
+  text-align:center;
+  width: 1025px;
+  height: fit-content;
+  border-radius:10px;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  -ms-border-radius:10px;
+  -o-border-radius:10px;
+  margin: auto;
+  margin-top: 5vw;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.page_title{
+  font-family: "Nunito";
+  color: rgb(29, 155, 240);
+  font-size: 28px;
+  font-weight: bold;
+  border: none;
+  padding-top: 70px;
+
+}
+.title_span{
+    font-family: $main_font;
+    color: #707070;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+.input_field{
+  width: 420px;
+  height: 65px;
+  padding-left: 60px;
+  font-size: 18px;
+  font-family: "Nunito";
+  border-radius:5px ;
+  -webkit-border-radius:5px ;
+  -moz-border-radius:5px ;
+  -ms-border-radius:5px ;
+  -o-border-radius:5px ;
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 3px #b3b3b3;
+  margin-bottom: 30px;
+  background-color: transparent;
+  color: white;
+}
+
+.input_label{
+  font-family:"Nunito";
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+
+.input_field:focus{
+  border: 2px solid rgb(29, 155, 240);
+  outline: none;
+  filter: drop-shadow(0px 0px 1px #707070);
+  -webkit-filter: drop-shadow(0px 0px 1px #707070);
+}
+.input_field#error{
+  border: 2px solid red;
+}
+.input_field#error:focus{
+  border: 2px solid rgb(29, 155, 240);
+}
+.input_container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: auto;
+  font{
+    margin-top: -5%;
+    margin-bottom: 5%;
+  }
+}
+.input_container i{
+    position: absolute;
+    left: 25px;
+    top: 67.5px;
+    color: gray;
+}
+
+
+.visibility_icon{
+  position: absolute;
+    left: 350px;
+    cursor: pointer;
+}
+
+
+
+.singin_button{
+  width: 400px;
+  height: 60px;
+  background-color: rgb(29, 155, 240);
+  color: white;
+  font-size: 21px;
+  font-family: "Nunito";
+  border-radius: 37px;
+  -webkit-border-radius: 37px;
+  -moz-border-radius: 37px;
+  -ms-border-radius: 37px;
+  -o-border-radius: 37px;
+  border: none;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.input_field::-webkit-input-placeholder{
+    color: white;
+}
+
+.text_center{
+  font-family: "Nunito";
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+  .login_block{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    margin-top: 0px;
+
+  }
+  .page_title{
+    font-size: 25px;
+    padding-top: 50px;
+  
+  }
+  .title_span{
+      font-size: 18px;
+      margin-bottom: 50px;
+    }
+  .singin_button, .input_field{
+    width: 90%;
+  }
+
+  .visibility_icon{
+    left: 80%;
+    top: 0;
+  }
+
+  .input_field{
+    padding: 0px 60px;
+    width: 100%;
+    height: 70px;
+  }
+  
+
+}

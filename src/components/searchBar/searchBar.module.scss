@@ -1,0 +1,63 @@
+
+
+.sidebar ul li #fa_search{
+    position: absolute;
+    z-index: 99;
+    color: rgb(116, 116, 116);
+    font-size: 18px;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+
+.sidebar ul li input{
+    position: relative;
+    height: 100%;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    outline: none;
+    border: none;
+    background: rgb(21, 24, 28);
+    padding-left: 50px;
+    padding-right: 30px;
+    font-size: 18px;
+    color: #fff;
+    width: 100%;
+}
+
+
+.sidebar ul li i{
+    height: 50px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+    position: relative;
+    z-index: 10000;
+    cursor: pointer;
+}
+
+.sidebar ul{
+    margin-top: 10px;
+}
+.sidebar ul li{
+    position: relative;
+    height: 45px;
+    width: 100%;
+    list-style: none;
+    line-height: 50px;
+}
+
+@media screen and  (max-width: 1224px){
+    .sidebar{
+        display: none;
+    }
+}

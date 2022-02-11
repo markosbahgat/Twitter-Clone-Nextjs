@@ -1,0 +1,132 @@
+.post_container{
+    width: 55%;
+    border-bottom: 1.5px solid rgb(60, 60, 60);
+    border-right: 1.5px solid rgb(60, 60, 60);
+    border-left: 1.5px solid rgb(60, 60, 60);
+}
+
+.avatar_container{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid rgb(60, 60, 60);
+    position: relative;
+    cursor: pointer;
+    *{
+        object-fit: cover;
+    }
+
+}
+
+.postImg_container{
+    width: 80%;
+    min-height: 250px;
+    margin: auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    *{
+        object-fit: cover;
+    }
+}
+.post_content_container{
+    width: 80%;
+    margin: auto;
+    
+}
+
+.post_icons{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    div{
+        color: rgb(110, 118, 125)
+    }
+    i{
+        cursor: pointer;
+        font-size: 20px;
+        color: rgb(110, 118, 125);
+        padding: 10px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+    div:nth-child(2):hover{
+        color: #00BA7C;
+        i{
+            color: #00BA7C;
+            background-color: #00ba7c21;
+        }
+    }
+    div:nth-child(3):hover{
+        color: #f91880;
+        i{
+            color: #f91880;
+            background-color: #f918811f;
+        }
+    }
+    .firstDiv:hover{
+        color: rgb(29, 155, 240);
+        i{
+            color: rgb(29, 155, 240);
+            background-color: rgba(29, 156, 240, 0.116);
+        }
+    }
+
+}
+.Description{
+    text-transform: capitalize;
+    margin-bottom: 3%;
+}
+
+.identity_container{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 15px;
+    gap: 5%;
+    div{
+        font-size: 12px;
+        cursor: pointer;
+        color: white;
+    }
+}
+
+
+@media screen  and (max-width: 1224px){
+    .post_container{
+        width: 100%;
+    }
+    .post_content_container{
+        width: 90%;
+    }
+    .post_icons{
+        div{
+            color: rgb(110, 118, 125)
+        }
+        i{
+            font-size: 18px;
+            padding: 8px;
+        }
+    
+    }
+    .postImg_container{ 
+        width: 90%;
+    }
+}

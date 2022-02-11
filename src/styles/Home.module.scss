@@ -1,0 +1,52 @@
+.container {
+  padding: 0 3rem 10rem 3rem;
+  height: 100vh;
+  overflow: auto;
+  width: 100%;
+
+}
+
+
+.main{
+  margin-left: 7.5%;
+}
+
+.container::-webkit-scrollbar{
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  background-color: rgb(27, 27, 27);
+  width: 12px;
+}
+
+
+.container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+/* Handle on hover */
+.container::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+
+@media screen and (max-width: 1224px){
+  .main{
+    margin-left:2%;
+  }
+  .container {
+    position: relative;
+    width: 85%;
+    padding: 0;
+    margin: auto;
+    left: 5%;
+  
+  }
+}

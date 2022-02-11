@@ -1,0 +1,75 @@
+.container{
+    height: fit-content;
+    width: 430px;
+}
+.container .wrapper{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    border: 2px dashed #c2cdda;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+    display: none;
+}
+.wrapper .img_container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .img_container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.wrapper .icon {
+    font-size: 100px;
+    color: red;
+}
+.wrapper .text {
+    font-size: 20px;
+    color: red;
+    font-weight: 600;
+}
+
+#cancel_btn{
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: royalblue;
+
+}
+
+.wrapper .file_name{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    color: #fff;
+    padding: 8px 0px;
+    font-size: 18px;
+    background: linear-gradient(135deg , red, blue);
+    display: none;
+
+}
+
+
+.container #custom_btn{
+    background-color: transparent;
+    width: 90px;
+}

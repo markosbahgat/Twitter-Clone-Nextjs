@@ -1,0 +1,57 @@
+.whatsHappening_container{
+    background-color: rgb(21, 24, 28);
+    width: 100%;
+    height: fit-content;
+    margin-top: 5%;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    padding: 10px 15px;
+}
+
+
+.latestImg_container{
+    display: inline-flex;
+    position: relative;
+    width: 30%;
+    height: 80px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    overflow: hidden;
+    *{
+        object-fit: cover;
+    }
+}
+
+.title{
+    width: 65%;
+    span{
+        font-size: 12px;
+        color: gray;
+    }
+}
+
+.post_container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    padding: 10px 20px;
+}
+
+.post_container:hover{
+    background-color: rgba(38, 44, 51, 0.534);
+    cursor: pointer;
+}

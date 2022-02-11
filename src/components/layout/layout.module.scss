@@ -1,0 +1,25 @@
+.children{
+    position: absolute;
+    width: calc(100% - 240px);
+    left: 240px;
+}
+
+.searchBar{
+    position: absolute;
+    width: 25%;
+    right: 100px;
+    top: 0;
+}
+
+@media screen and (max-width: 1224px){
+    .children{
+        position: relative;
+        width: 100%;
+        left: 30px;
+    }
+    .searchBar{
+        display: none;
+        width: 5%;
+        right: 0;
+    }
+}
