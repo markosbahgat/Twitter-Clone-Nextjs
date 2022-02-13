@@ -35,7 +35,7 @@ function Post({post}) {
                             <span> {likes}</span>
                         </div>
                         <div>
-                            <SpeedDial id={post.owner.id}/>
+                            <SpeedDial OwnerId={post.owner.id} PostId={post.id}/>
                         </div>
                     </div>
                 </div>

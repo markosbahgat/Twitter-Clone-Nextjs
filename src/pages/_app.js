@@ -10,6 +10,7 @@ import { useEffect } from 'react';
 
 
 function MyApp({ Component, pageProps }) {
+  
   const router = useRouter();
   const cookies = parseCookies();
   useEffect(() => {
@@ -21,6 +22,7 @@ function MyApp({ Component, pageProps }) {
     }
 
   }, [router.pathname, cookies.token])
+
     return (
       <Provider store={store}>
             <Layout>

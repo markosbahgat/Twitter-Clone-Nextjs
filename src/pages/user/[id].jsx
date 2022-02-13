@@ -23,7 +23,7 @@ export const getStaticPaths = async () => {
           }
         }catch (error){
             console.log(error.message);
-            return { paths: [], fallback: true}
+            return {paths: [], fallback: true};
         }
   }
   export const getStaticProps = async (context) => {

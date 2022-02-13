@@ -30,11 +30,11 @@ const fetchSlice = createSlice({
         },
         appendBookmarks: (state, action) => {
             const bookedmarkItem = state.posts.data?.filter(item => item.id === action.payload)
-            const bookedmarkItemFromProvider = state.provider.postsData.data.filter(item => item.id === action.payload)
-            console.log(bookedmarkItemFromProvider);
+            const bookedmarkItemFromProvider = state.provider.postsData.data?.filter(item => item.id === action.payload)
             state.bookmarks.push(bookedmarkItem? bookedmarkItem : bookedmarkItemFromProvider);
         },
         appendProvider: (state, action) => {
+            console.log(action.payload);
             state.provider = action.payload;
         },
         pageAndLimit: (state, action) => {
