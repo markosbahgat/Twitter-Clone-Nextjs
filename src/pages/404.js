@@ -14,7 +14,7 @@ function Error404() {
         <div>
             <main className={styles.main}>
                 <h1>
-                    Oops, the page you are looking for is not found.
+                    Oops, the page you are looking for is not found. Please try again later
                 </h1>
                 <div style={{display:"flex", alignItems:"center",gap:"3%", marginTop:"20px", width:"26%"}}>
                     <button className={styles.Home_button}><Link href="/home"><a>Go Home</a></Link></button>
